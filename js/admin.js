@@ -14,7 +14,7 @@
         window.openAdminLoginModal();
       } else {
         alert("Admin Authentication Required. Redirecting to store home...");
-        window.location.href = "index.html";
+        window.location.href = "/";
       }
     }
   }
@@ -385,7 +385,7 @@
       sessionStorage.removeItem('ifix_admin_logged_in');
       showToast('Logged Out', 'Admin session ended.');
       setTimeout(() => {
-        window.location.href = 'index.html';
+        window.location.href = 'index';
       }, 800);
     });
   }

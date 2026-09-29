@@ -1574,7 +1574,7 @@ function initAdminPortalSync() {
   // Export global open function
   window.openAdminLoginModal = function() {
     if (sessionStorage.getItem('ifix_admin_logged_in') === 'true') {
-      window.location.href = 'admin.html';
+      window.location.href = 'admin';
       return;
     }
     if (modalOverlay) modalOverlay.classList.add('active');
@@ -1614,7 +1614,7 @@ function initAdminPortalSync() {
         showShopToast('Admin Authenticated', 'Access granted. Redirecting to Admin Dashboard...');
         if (modalOverlay) modalOverlay.classList.remove('active');
         setTimeout(() => {
-          window.location.href = 'admin.html';
+          window.location.href = 'admin';
         }, 600);
       } else {
         if (errorMsg) errorMsg.style.display = 'block';
@@ -1623,7 +1623,7 @@ function initAdminPortalSync() {
   }
 
   // Bind all Admin nav buttons / links
-  document.querySelectorAll('.editorial-nav__link--admin, [href="admin.html"]').forEach(btn => {
+  document.querySelectorAll('.editorial-nav__link--admin, [href="/admin"]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       if (sessionStorage.getItem('ifix_admin_logged_in') !== 'true') {
         e.preventDefault();
