@@ -5749,8 +5749,10 @@ p {
     gap: 12px !important;
     padding: 12px 0 !important;
     margin-bottom: 16px !important;
-    top: 80px;
+    top: 50px;
     position: sticky;
+    background: #fff;
+    z-index: 90;
   }
 
   .shop-toolbar__left {
