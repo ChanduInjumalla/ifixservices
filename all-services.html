@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All certified repair & security services by iFixServices. MacBook, iPhone, CCTV Camera & Apple Watch repairs with same-day turnaround, genuine OEM parts, and up to 1-year warranty.">
+  <title>All Services & Repairs — iFixServices</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body class="shop-page">
+
+  <!-- ═══════ ANNOUNCEMENT BAR ═══════ -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__track">
+      <span class="announcement-bar__item">⚡ SAME-DAY HARDWARE REPAIRS IN 45 MINS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🛡️ UP TO 1-YEAR WARRANTY ON ALL GENUINE OEM PARTS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🚗 FREE DOORSTEP PICKUP & DELIVERY ACROSS HYDERABAD</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">⚡ SAME-DAY HARDWARE REPAIRS IN 45 MINS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🛡️ UP TO 1-YEAR WARRANTY ON ALL GENUINE OEM PARTS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🚗 FREE DOORSTEP PICKUP & DELIVERY ACROSS HYDERABAD</span>
+    </div>
+  </div>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.jpeg" alt="iFixServices Logo">
+      </a>
+
+      <div class="navbar__menu">
+        <a href="index.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="all-services.html" class="navbar__link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          All
+        </a>
+        <a href="macbook.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+          MacBook
+        </a>
+        <a href="iphone.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          iPhone
+        </a>
+        <a href="camera.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          CCTV Camera
+        </a>
+        <a href="apple-watch.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+          Watch
+        </a>
+        <a href="admin.html" class="navbar__link editorial-nav__link--admin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Admin
+        </a>
+      </div>
+
+      <div class="navbar__actions">
+        <a href="#saved" class="navbar__icon-btn" id="wishlist-btn" aria-label="Saved Services">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="navbar__badge" id="wishlist-count">0</span>
+        </a>
+        <button class="navbar__icon-btn" id="header-search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="btn btn--primary navbar__cta-btn" data-action="whatsapp-general" style="padding: 8px 18px; font-size: 13px; gap: 6px;">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Inquire Now
+        </button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> Home</a>
+    <a href="all-services.html" class="mobile-menu__link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> All Services</a>
+    <a href="macbook.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"></rect></svg> MacBook Services</a>
+    <a href="iphone.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"></rect></svg> iPhone Services</a>
+    <a href="camera.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path></svg> CCTV Camera Services</a>
+    <a href="apple-watch.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"></circle></svg> Apple Watch Services</a>
+    <a href="about.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle></svg> About Us</a>
+    <a href="contact.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path></svg> Contact</a>
+    <a href="#" class="mobile-menu__cta" data-action="whatsapp-general"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> WhatsApp Support</a>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════════════
+       1. CLEAN EDITORIAL HEADER (All Services)
+       ═══════════════════════════════════════════════════ -->
+  <header class="editorial-hero editorial-hero--white">
+    <div class="container editorial-hero__container">
+      <nav class="editorial-hero__breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="editorial-hero__sep">/</span>
+        <span aria-current="page">All Services</span>
+      </nav>
+      <h1 class="editorial-hero__title">All Hardware Repairs & Solutions</h1>
+      <p class="editorial-hero__subtitle">Complete certified catalog for MacBook, iPhone, CCTV Camera systems, and Apple Watch with genuine OEM parts and same-day delivery.</p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════
+       2. SHOP TOOLBAR & MAIN CATALOG LAYOUT
+       ═══════════════════════════════════════════════════ -->
+  <main class="shop-main">
+    <div class="container">
+
+      <div class="shop-toolbar">
+        <div class="shop-toolbar__left">
+          <h2 class="shop-toolbar__title">All Repair Services</h2>
+          <span class="shop-toolbar__count"><strong id="product-count">16</strong> Services found</span>
+        </div>
+
+        <div class="shop-toolbar__right">
+          <!-- Select Model Dropdown -->
+          <div class="shop-toolbar__model-select">
+            <span class="shop-toolbar__sort-label">DEVICE / MODEL</span>
+            <div class="custom-select-wrap">
+              <select id="model-filter-select" class="shop-toolbar__select" aria-label="Filter by exact device model">
+                <option value="all" selected>ALL DEVICES & MODELS</option>
+                <optgroup label="MacBook Models">
+                  <option value="macbook mb-pro-m3">MacBook Pro 14"/16" (M3 / Pro / Max)</option>
+                  <option value="macbook mb-pro-m2">MacBook Pro 14"/16" (M2 Pro / Max)</option>
+                  <option value="macbook mb-pro-m1">MacBook Pro 14"/16" (M1 Pro / Max)</option>
+                  <option value="macbook mb-air-m3-m2">MacBook Air 15"/13" (M3 / M2)</option>
+                  <option value="macbook mb-air-13-m1">MacBook Air 13" (M1 2020)</option>
+                  <option value="macbook mb-pro-intel">MacBook Pro Intel Series</option>
+                </optgroup>
+                <optgroup label="iPhone Models">
+                  <option value="iphone ip-15-pro">iPhone 15 Pro Max & 15 Pro</option>
+                  <option value="iphone ip-15">iPhone 15 & 15 Plus</option>
+                  <option value="iphone ip-14-pro">iPhone 14 Pro Max & 14 Pro</option>
+                  <option value="iphone ip-14">iPhone 14 & 14 Plus</option>
+                  <option value="iphone ip-13">iPhone 13 / 13 Pro / 13 Mini</option>
+                  <option value="iphone ip-12">iPhone 12 / 12 Pro / 12 Mini</option>
+                  <option value="iphone ip-11">iPhone 11 / Pro / Pro Max</option>
+                </optgroup>
+                <optgroup label="CCTV Security">
+                  <option value="camera cctv-4k-dome">4K Ultra HD Dome Camera System</option>
+                  <option value="camera cctv-bullet-night">Color Night Vision Outdoor Bullet</option>
+                  <option value="camera cctv-ptz-360">360° PTZ Speed Dome Camera</option>
+                  <option value="camera cctv-home-pkg">4-Camera Complete Home Package</option>
+                </optgroup>
+                <optgroup label="Apple Watch">
+                  <option value="watch watch-ultra-2">Apple Watch Ultra 2 & Ultra 1</option>
+                  <option value="watch watch-s9-s8">Apple Watch Series 9 & 8</option>
+                  <option value="watch watch-s7">Apple Watch Series 7</option>
+                  <option value="watch watch-se">Apple Watch SE</option>
+                </optgroup>
+              </select>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <div class="shop-toolbar__sort">
+            <span class="shop-toolbar__sort-label">SORT BY</span>
+            <div class="custom-select-wrap">
+              <select id="sort-select" class="shop-toolbar__select" aria-label="Sort all repairs">
+                <option value="featured" selected>FEATURED</option>
+                <option value="price-asc">PRICE: LOW TO HIGH</option>
+                <option value="price-desc">PRICE: HIGH TO LOW</option>
+                <option value="rating">HIGHEST RATED</option>
+                <option value="newest">POPULAR REPAIRS</option>
+              </select>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <div class="shop-toolbar__layout-btns">
+            <button class="shop-toolbar__layout-btn active" data-grid="4" title="4 Columns Grid" aria-label="4 Columns Grid">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="3.5" height="18" rx="0.5"/><rect x="8.5" y="3" width="3.5" height="18" rx="0.5"/><rect x="14" y="3" width="3.5" height="18" rx="0.5"/><rect x="19.5" y="3" width="3.5" height="18" rx="0.5"/></svg>
+            </button>
+            <button class="shop-toolbar__layout-btn" data-grid="2" title="Compact Grid" aria-label="2 Columns Grid">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="3" width="7" height="18" rx="0.5"/><rect x="13" y="3" width="7" height="18" rx="0.5"/></svg>
+            </button>
+          </div>
+
+          <button class="shop-mobile-filter-btn" id="open-filter-drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
+            <span>Filter</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════
+           3. TWO-COLUMN ALL SERVICES CATALOG LAYOUT
+           ═══════════════════════════════════════════════════ -->
+      <div class="shop-layout">
+
+        <!-- ─── SIDEBAR FILTERS ─── -->
+        <aside class="shop-sidebar" id="shop-sidebar">
+          <div class="shop-sidebar__inner">
+            
+            <div class="shop-sidebar__mobile-header">
+              <h3>Filters</h3>
+              <button class="shop-sidebar__close-btn" id="close-filter-drawer" aria-label="Close Filters">&times;</button>
+            </div>
+
+            <!-- Categories Quick Navigation -->
+            <div class="filter-group filter-group--categories">
+              <ul class="category-nav-list">
+                <li class="category-nav-item active" data-category="all"><a href="#all">ALL HARDWARE SERVICES</a></li>
+                <li class="category-nav-item" data-category="macbook"><a href="#macbook">MACBOOK SERVICES</a></li>
+                <li class="category-nav-item" data-category="iphone"><a href="#iphone">IPHONE SERVICES</a></li>
+                <li class="category-nav-item" data-category="camera"><a href="#cctv">CCTV CAMERAS</a></li>
+                <li class="category-nav-item" data-category="watch"><a href="#watch">APPLE WATCH</a></li>
+                <li class="category-nav-item highlight" data-category="screen"><a href="#screen">SCREEN REPLACEMENTS</a></li>
+                <li class="category-nav-item" data-category="battery"><a href="#battery">BATTERY HEALTH</a></li>
+                <li class="category-nav-item" data-category="logicboard"><a href="#logicboard">LOGIC BOARD / IC</a></li>
+              </ul>
+            </div>
+
+            <div class="shop-sidebar__divider"></div>
+            <h4 class="shop-sidebar__main-title">Filter By</h4>
+
+            <!-- 1. DEVICE CATEGORY -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>DEVICE TYPE</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="macbook">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">Apple MacBook (Pro & Air)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="iphone">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">Apple iPhone (All Series)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="camera">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">CCTV Camera & Security</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="watch">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">Apple Watch (Ultra & Series)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. SPEED CHIPS -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>TURNAROUND SPEED</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <div class="size-chip-grid" style="grid-template-columns: repeat(2, 1fr);">
+                  <button type="button" class="size-chip" data-size="30m">30–45 Mins</button>
+                  <button type="button" class="size-chip" data-size="1hr">1–2 Hours</button>
+                  <button type="button" class="size-chip" data-size="same-day">Same Day</button>
+                  <button type="button" class="size-chip" data-size="24hr">24 Hours</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. ESTIMATED PRICE RANGE -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>PRICE RANGE (₹)</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <div class="price-slider-wrap">
+                  <div class="price-slider-range">
+                    <input type="range" id="filter-price-slider" min="499" max="25000" value="25000" step="500">
+                  </div>
+                  <div class="price-slider-label">
+                    <span>From: </span>
+                    <strong id="price-slider-value">₹499 — ₹25,000</strong>
+                  </div>
+                  <button type="button" class="price-filter-apply-btn" id="apply-price-filter">VIEW SERVICES (16)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- RESET ALL -->
+            <div class="shop-sidebar__reset-wrap">
+              <button type="button" class="shop-sidebar__reset-btn" id="clear-all-filters">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                RESET FILTERS
+              </button>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- ─── 4. MAIN ALL SERVICES GRID (4 Columns) ─── -->
+        <div class="shop-content">
+
+          <!-- Active Model Indicator -->
+          <div class="model-banner-indicator" id="model-banner-indicator">
+            <div class="model-banner-indicator__text">
+              <span>⚡</span>
+              <span>Selected Device / Model: <strong id="model-banner-name">All Devices & Models</strong></span>
+            </div>
+            <button type="button" class="model-banner-indicator__reset" id="model-banner-reset">Reset to All Devices</button>
+          </div>
+
+          <div class="editorial-product-grid" id="product-grid">
+
+            <!-- 1. MacBook Screen Replacement -->
+            <article class="editorial-card" data-category="macbook screen" data-material="macbook" data-price="4999" data-rating="4.9">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">MOST POPULAR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="macbook.html" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Retina Screen Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-1" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-1" data-name="MacBook Retina Screen Replacement" data-price="4,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">MACBOOK • RETINA OEM</span>
+                <h3 class="editorial-card__title"><a href="macbook.html">MacBook Retina Display & Glass Replacement</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹4,999</span>
+                  <span class="editorial-card__price-original">₹6,999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">1-Year Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. iPhone OLED Display -->
+            <article class="editorial-card" data-category="iphone screen" data-material="iphone" data-price="2999" data-rating="4.9">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">30-MIN EXPRESS</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="iphone.html" class="editorial-card__link">
+                  <img src="images/placeholder-iphone.png" alt="iPhone OLED Screen Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-2" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-2" data-name="iPhone OLED Screen Replacement" data-price="2,999" data-img="images/placeholder-iphone.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">IPHONE • TRUE TONE</span>
+                <h3 class="editorial-card__title"><a href="iphone.html">iPhone OLED Display & True Tone Screen</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,999</span>
+                  <span class="editorial-card__price-original">₹4,500</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">30 Mins</span>
+                  <span class="size-pill active">1-Year Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. CCTV 4K Ultra HD Dome Camera -->
+            <article class="editorial-card" data-category="camera cctv" data-material="camera" data-price="2499" data-rating="4.9">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">2-YEAR WARRANTY</span>
+                <button class="editorial-card__wishlist" aria-label="Save System" data-product-id="all-3">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="camera.html" class="editorial-card__link">
+                  <img src="images/placeholder-cctv.png" alt="4K Ultra HD Dome IP Camera" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-3" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-3" data-name="4K Ultra HD Dome Camera" data-price="2,499" data-img="images/placeholder-cctv.png" title="Get Quote" aria-label="Get Quote">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">CCTV • 4K ULTRA HD</span>
+                <h3 class="editorial-card__title"><a href="camera.html">4K Ultra HD Dome Camera System</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,499</span>
+                  <span class="editorial-card__price-original">₹3,499</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">PoE Powered</span>
+                  <span class="size-pill active">Free Setup</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4. Apple Watch OLED Display -->
+            <article class="editorial-card" data-category="watch screen" data-material="watch" data-price="2199" data-rating="4.9">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">SAPPHIRE GLASS</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="apple-watch.html" class="editorial-card__link">
+                  <img src="images/placeholder-watch.png" alt="Apple Watch OLED Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-4" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-4" data-name="Apple Watch OLED Replacement" data-price="2,199" data-img="images/placeholder-watch.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">APPLE WATCH • IP6X SEAL</span>
+                <h3 class="editorial-card__title"><a href="apple-watch.html">Apple Watch OLED Display & Glass Replacement</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,199</span>
+                  <span class="editorial-card__price-original">₹3,400</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">45 Mins</span>
+                  <span class="size-pill active">Waterproof Seal</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5. MacBook Battery Replacement -->
+            <article class="editorial-card" data-category="macbook battery" data-material="macbook" data-price="2999" data-rating="4.8">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">100% HEALTH</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-5">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="macbook.html" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Battery Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-5" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-5" data-name="MacBook Battery Replacement" data-price="2,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">MACBOOK • HIGH DENSITY</span>
+                <h3 class="editorial-card__title"><a href="macbook.html">MacBook High-Capacity Battery Renewal</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,999</span>
+                  <span class="editorial-card__price-original">₹4,200</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">1-Year Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6. iPhone 100% Health Battery -->
+            <article class="editorial-card" data-category="iphone battery" data-material="iphone" data-price="1299" data-rating="4.9">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">30 MINS</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="iphone.html" class="editorial-card__link">
+                  <img src="images/placeholder-iphone.png" alt="iPhone Battery Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-6" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-6" data-name="iPhone 100% Health Battery" data-price="1,299" data-img="images/placeholder-iphone.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">IPHONE • ZERO CYCLE</span>
+                <h3 class="editorial-card__title"><a href="iphone.html">iPhone 100% Health Battery Replacement</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,299</span>
+                  <span class="editorial-card__price-original">₹1,999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">30 Mins</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7. CCTV Bullet Color Night Vision Camera -->
+            <article class="editorial-card" data-category="camera cctv" data-material="camera" data-price="2799" data-rating="4.8">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">FULL COLOR NIGHT</span>
+                <button class="editorial-card__wishlist" aria-label="Save Camera" data-product-id="all-7">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="camera.html" class="editorial-card__link">
+                  <img src="images/placeholder-cctv.png" alt="Color Night Vision Bullet Camera" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-7" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-7" data-name="Color Night Vision Bullet Camera" data-price="2,799" data-img="images/placeholder-cctv.png" title="Get Quote" aria-label="Get Quote">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">CCTV • IP67 WEATHERPROOF</span>
+                <h3 class="editorial-card__title"><a href="camera.html">Color Night Vision Outdoor Bullet Camera</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,799</span>
+                  <span class="editorial-card__price-original">₹3,999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">30m Range</span>
+                  <span class="size-pill active">PoE Ready</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 8. MacBook Logic Board Micro-Soldering -->
+            <article class="editorial-card" data-category="macbook logicboard" data-material="macbook" data-price="3499" data-rating="4.9">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">CHIP-LEVEL EXPERT</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-8">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="macbook.html" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Logic Board Micro-Soldering" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-8" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-8" data-name="MacBook Logic Board Repair" data-price="3,499" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">MACBOOK • IC REBALLING</span>
+                <h3 class="editorial-card__title"><a href="macbook.html">Logic Board Micro-Soldering & IC Repair</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹3,499</span>
+                  <span class="editorial-card__price-original">₹5,500</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">24–48 Hours</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 9. iPhone Back Glass Laser Repair -->
+            <article class="editorial-card" data-category="iphone" data-material="iphone" data-price="1999" data-rating="4.8">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">LASER ACCURACY</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-9">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="iphone.html" class="editorial-card__link">
+                  <img src="images/placeholder-iphone.png" alt="iPhone Back Glass Laser Repair" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-9" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-9" data-name="iPhone Back Glass Laser Repair" data-price="1,999" data-img="images/placeholder-iphone.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">IPHONE • LASER SEPARATION</span>
+                <h3 class="editorial-card__title"><a href="iphone.html">Back Glass Laser Separation & Renewal</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,999</span>
+                  <span class="editorial-card__price-original">₹3,200</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">Color Matched</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 10. Complete CCTV 4-Camera Home Package -->
+            <article class="editorial-card" data-category="camera cctv" data-material="camera" data-price="8999" data-rating="5.0">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">ALL-IN-ONE BUNDLE</span>
+                <button class="editorial-card__wishlist" aria-label="Save Package" data-product-id="all-10">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="camera.html" class="editorial-card__link">
+                  <img src="images/placeholder-cctv.png" alt="Complete 4-Camera Security System" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-10" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-10" data-name="4-Camera Full Home Security System" data-price="8,999" data-img="images/placeholder-cctv.png" title="Get Quote" aria-label="Get Quote">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">CCTV • HOME & VILLA</span>
+                <h3 class="editorial-card__title"><a href="camera.html">4-Camera Complete Home Security Package</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹8,999</span>
+                  <span class="editorial-card__price-original">₹12,500</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">Includes 1TB HDD</span>
+                  <span class="size-pill active">Free Installation</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 11. Apple Watch Heart Rate & SpO2 Sensor -->
+            <article class="editorial-card" data-category="watch" data-material="watch" data-price="1599" data-rating="4.8">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">ECG PRECISION</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-11">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="apple-watch.html" class="editorial-card__link">
+                  <img src="images/placeholder-watch.png" alt="Apple Watch Rear Sensor Repair" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-11" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-11" data-name="Apple Watch Heart Rate Sensor" data-price="1,599" data-img="images/placeholder-watch.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">APPLE WATCH • OPTICAL SENSOR</span>
+                <h3 class="editorial-card__title"><a href="apple-watch.html">Heart Rate & SpO2 Rear Sensor Repair</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,599</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 12. MacBook MagSafe & USB-C Port Repair -->
+            <article class="editorial-card" data-category="macbook" data-material="macbook" data-price="1499" data-rating="4.8">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">100W PD READY</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="all-12">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <a href="macbook.html" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook MagSafe & USB-C Port Repair" class="editorial-card__img" loading="lazy">
+                </a>
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="all-12" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="all-12" data-name="MagSafe & USB-C Port Repair" data-price="1,499" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">MACBOOK • POWER SUB-BOARD</span>
+                <h3 class="editorial-card__title"><a href="macbook.html">MagSafe 3 & USB-C Charging Port Repair</a></h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,499</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">45 Mins</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /.editorial-product-grid -->
+
+          <!-- ─── 6. PAGINATION ─── -->
+          <nav class="editorial-pagination" aria-label="Catalog pagination">
+            <button class="editorial-pagination__btn" aria-label="Previous page" disabled>&lsaquo;</button>
+            <button class="editorial-pagination__page active">1</button>
+            <button class="editorial-pagination__page">2</button>
+            <button class="editorial-pagination__btn" aria-label="Next page">&rsaquo;</button>
+          </nav>
+
+        </div><!-- /.shop-content -->
+      </div><!-- /.shop-layout -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       7. RECENTLY VIEWED SERVICES
+       ═══════════════════════════════════════════════════ -->
+  <section class="recently-viewed-section">
+    <div class="container">
+      <div class="recently-viewed-section__header">
+        <h2 class="recently-viewed-section__title">Recently Viewed Service Solutions</h2>
+      </div>
+
+      <div class="recently-viewed-grid">
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="MacBook Screen Repair" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">MacBook Screen Replacement</h4>
+          <span class="mini-product-card__price">₹4,999</span>
+        </div>
+
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-iphone.png" alt="iPhone OLED Screen" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">iPhone OLED Display</h4>
+          <span class="mini-product-card__price">₹2,999</span>
+        </div>
+
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-cctv.png" alt="4K Dome IP Camera" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">4K Dome Security Camera</h4>
+          <span class="mini-product-card__price">₹2,499</span>
+        </div>
+
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-watch.png" alt="Apple Watch OLED" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">Apple Watch OLED Screen</h4>
+          <span class="mini-product-card__price">₹2,199</span>
+        </div>
+
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="Logic Board Repair" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">Logic Board Micro-Soldering</h4>
+          <span class="mini-product-card__price">₹3,499</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       8. MULTI-COLUMN FOOTER
+       ═══════════════════════════════════════════════════ -->
+  <footer class="editorial-footer">
+    <div class="container">
+      <div class="editorial-footer__grid">
+        <div class="editorial-footer__col editorial-footer__col--brand">
+          <h3 class="editorial-footer__brand-title">iFixServices</h3>
+          <p class="editorial-footer__address">
+            Shop #4, Tech Hub Plaza, Main Road,<br>
+            Hyderabad, Telangana 500081<br><br>
+            +91 78912 39456<br>
+            support@ifixservices.in
+          </p>
+        </div>
+
+        <div class="editorial-footer__col">
+          <h4 class="editorial-footer__heading">REPAIR SERVICES</h4>
+          <ul class="editorial-footer__links">
+            <li><a href="all-services.html">All Services Catalog</a></li>
+            <li><a href="macbook.html">MacBook Pro & Air Repairs</a></li>
+            <li><a href="iphone.html">iPhone Screen & Battery</a></li>
+            <li><a href="camera.html">CCTV Installation & Systems</a></li>
+            <li><a href="apple-watch.html">Apple Watch OLED Repair</a></li>
+          </ul>
+        </div>
+
+        <div class="editorial-footer__col">
+          <h4 class="editorial-footer__heading">COMPANY</h4>
+          <ul class="editorial-footer__links">
+            <li><a href="about.html">About iFixServices</a></li>
+            <li><a href="contact.html">Contact & Service Center</a></li>
+            <li><a href="#">Warranty Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="editorial-footer__col editorial-footer__col--newsletter">
+          <h4 class="editorial-footer__heading">EXPERT SUPPORT</h4>
+          <p class="editorial-footer__newsletter-desc">Subscribe to receive exclusive repair coupons, diagnostics guides, and tech tips!</p>
+          <form class="editorial-footer__form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+            <p class="editorial-footer__terms-note">By subscribing, you accept the <a href="#">Privacy Policy</a></p>
+            <button type="submit" class="editorial-footer__submit-btn">GET UPDATES</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="editorial-footer__bottom">
+        <div class="editorial-footer__copy">
+          © 2026 iFixServices. ALL RIGHTS RESERVED. CERTIFIED HARDWARE & CCTV SPECIALISTS.
+        </div>
+        <div class="editorial-footer__payments">
+          <span>SECURE PAYMENTS</span>
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%2300579f'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>UPI</text></svg>" alt="UPI">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%2300579f'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>VISA</text></svg>" alt="Visa">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23eb001b'/><circle cx='14' cy='12' r='7' fill='%23ff5f00'/><circle cx='24' cy='12' r='7' fill='%23f79e1b'/></svg>" alt="Mastercard">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23000000'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='8' font-weight='bold' text-anchor='middle'>Pay</text></svg>" alt="Apple Pay">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23ffffff' stroke='%23ddd'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='8' font-weight='bold' text-anchor='middle'>GPay</text></svg>" alt="Google Pay">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════ QUICK VIEW MODAL ═══════ -->
+  <div class="quickview-modal-overlay" id="quickview-overlay"></div>
+  <div class="quickview-modal" id="quickview-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="quickview-modal__close" id="quickview-close" aria-label="Close modal">&times;</button>
+    <div class="quickview-modal__content" id="quickview-content"></div>
+  </div>
+
+  <!-- ═══════ BOOKING TOAST ═══════ -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <div class="toast-notification__icon">✓</div>
+    <div class="toast-notification__text">
+      <strong id="toast-title">Service Booked</strong>
+      <span id="toast-desc">Added to your repair estimate list.</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

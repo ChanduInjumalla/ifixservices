@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — iFixServices Product & Inventory Management</title>
+  <meta name="description" content="Admin Management Portal for iFixServices. Manage repair services, pricing, stock availability, and service images.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="editorial-body">
+
+  <!-- ════ STANDALONE ADMIN HEADER BAR ════ -->
+  <header class="admin-standalone-header">
+    <div class="container">
+      <div class="admin-standalone-header__inner">
+        <a href="index.html" class="admin-brand-logo">
+          <span class="admin-brand-tag" style="margin-left:0; font-size:12px; letter-spacing:2px; padding:6px 14px;">ADMIN PORTAL</span>
+        </a>
+
+        <div style="display:flex; gap:12px; align-items:center;">
+          <button type="button" class="admin-btn admin-btn--primary" id="add-service-hero-btn">
+            + Add New Service
+          </button>
+          <a href="all-services.html" target="_blank" class="admin-btn admin-btn--secondary" style="text-decoration:none;">
+            View Store ↗
+          </a>
+          <button type="button" class="admin-btn admin-btn--secondary" id="admin-logout-btn">
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════ MAIN ADMIN DASHBOARD BODY ════ -->
+  <main class="editorial-main">
+    
+    <!-- Hero Title Banner -->
+    <section class="admin-dashboard-hero">
+      <div class="container">
+        <div class="admin-dashboard-hero__inner">
+          <div>
+            <span class="admin-login-card__badge">AUTHENTICATED SESSION</span>
+            <h1 class="admin-dashboard-hero__title">Product & Inventory Management</h1>
+            <p class="admin-dashboard-hero__sub">Update service prices, titles, badges, stock status, and custom images with real-time store sync.</p>
+          </div>
+          <div class="admin-hero-actions">
+            <button type="button" class="admin-btn admin-btn--primary" id="open-add-modal-btn">+ Add New Product</button>
+            <a href="all-services.html" target="_blank" class="admin-btn admin-btn--secondary">View Live Store ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 30px; padding-bottom: 80px;">
+      
+      <!-- Stats Row -->
+      <div class="admin-stats-grid">
+        <div class="admin-stat-card">
+          <div class="admin-stat-card__label">Total Services</div>
+          <div class="admin-stat-card__val" id="stat-total-services">0</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-card__label">In Stock Services</div>
+          <div class="admin-stat-card__val" id="stat-instock-services" style="color:#137333;">0</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-card__label">Out of Stock</div>
+          <div class="admin-stat-card__val" id="stat-outofstock-services" style="color:#c5221f;">0</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-card__label">Categories</div>
+          <div class="admin-stat-card__val">4 Main</div>
+        </div>
+      </div>
+
+      <!-- Controls & Filter Bar -->
+      <div class="admin-controls-bar">
+        <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+          <input type="text" id="admin-search-input" class="admin-search-input" placeholder="🔍 Search service by title, ID, or tag...">
+          
+          <select id="admin-category-filter" class="admin-filter-select">
+            <option value="all">ALL CATEGORIES</option>
+            <option value="macbook">MacBook Services</option>
+            <option value="iphone">iPhone Services</option>
+            <option value="cctv">CCTV Camera Services</option>
+            <option value="watch">Apple Watch Care</option>
+          </select>
+
+          <select id="admin-stock-filter" class="admin-filter-select">
+            <option value="all">ALL STOCK STATUS</option>
+            <option value="instock">In Stock Only</option>
+            <option value="outofstock">Out of Stock Only</option>
+          </select>
+        </div>
+
+        <button type="button" class="admin-btn admin-btn--secondary" id="reset-catalog-btn" title="Reset to Factory Catalog Defaults" style="font-size:10px;">
+          ↻ Reset Catalog Defaults
+        </button>
+      </div>
+
+      <!-- Services Management Table -->
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Service Title</th>
+              <th>Category</th>
+              <th>Price (₹)</th>
+              <th>Original (₹)</th>
+              <th>Badge Tag</th>
+              <th>Stock Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="admin-services-table-body">
+            <!-- Rendered dynamically by js/admin.js -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ════ ADD / EDIT PRODUCT MODAL ════ -->
+  <div class="admin-modal-overlay" id="product-form-modal-overlay">
+    <div class="admin-modal" role="dialog" aria-modal="true">
+      <div class="admin-modal__header">
+        <h3 class="admin-modal__title" id="product-modal-title">Add New Service</h3>
+        <button type="button" class="admin-login-card__close" id="product-modal-close">&times;</button>
+      </div>
+      <div class="admin-modal__body">
+        <form id="admin-product-form">
+          <input type="hidden" id="form-product-id">
+
+          <div class="admin-form-group">
+            <label for="form-title">Service Title *</label>
+            <input type="text" id="form-title" class="admin-form-input" placeholder="e.g. MacBook Pro M3 Retina Screen Replacement" required>
+          </div>
+
+          <div class="form-row-2">
+            <div class="admin-form-group">
+              <label for="form-category">Category *</label>
+              <select id="form-category" class="admin-form-input" required>
+                <option value="macbook">MacBook</option>
+                <option value="iphone">iPhone</option>
+                <option value="cctv">CCTV Camera</option>
+                <option value="watch">Apple Watch</option>
+              </select>
+            </div>
+
+            <div class="admin-form-group">
+              <label for="form-stock">Stock Availability *</label>
+              <select id="form-stock" class="admin-form-input" required>
+                <option value="instock">In Stock</option>
+                <option value="outofstock">Out of Stock</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="admin-form-group">
+              <label for="form-price">Price (₹) *</label>
+              <input type="number" id="form-price" class="admin-form-input" placeholder="2999" required min="0">
+            </div>
+
+            <div class="admin-form-group">
+              <label for="form-original-price">Original Price (₹) (Optional)</label>
+              <input type="number" id="form-original-price" class="admin-form-input" placeholder="4500" min="0">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="admin-form-group">
+              <label for="form-badge">Badge Label</label>
+              <input type="text" id="form-badge" class="admin-form-input" placeholder="MOST POPULAR / 100% HEALTH / OEM">
+            </div>
+
+            <div class="admin-form-group">
+              <label for="form-tag">Meta Tag / Warranty</label>
+              <input type="text" id="form-tag" class="admin-form-input" placeholder="1-YEAR WARRANTY • 30 MINS">
+            </div>
+          </div>
+
+          <div class="admin-form-group">
+            <label for="form-image-file">Upload Image File OR Enter Image URL</label>
+            <input type="file" id="form-image-file" class="admin-form-input" accept="image/*">
+            <input type="text" id="form-image-url" class="admin-form-input" placeholder="images/placeholder-macbook.png" style="margin-top:8px;">
+            
+            <div class="image-preview-box">
+              <img id="form-image-preview" src="images/service-placeholder.png" alt="Preview">
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:24px;">
+            <button type="button" class="admin-btn admin-btn--secondary" id="product-modal-cancel">Cancel</button>
+            <button type="submit" class="admin-btn admin-btn--primary" id="product-modal-submit">Save Service</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="editorial-footer">
+    <div class="container">
+      <div class="editorial-footer__bottom">
+        <div class="editorial-footer__copy">
+          © 2026 iFixServices. ALL RIGHTS RESERVED. ADMIN MANAGEMENT PORTAL.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <div class="toast-notification__icon">✓</div>
+    <div class="toast-notification__text">
+      <strong id="toast-title">Catalog Updated</strong>
+      <span id="toast-desc">Service changes saved successfully.</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert Apple MacBook repair services by certified technicians. Retina screen replacement, genuine battery upgrade, logic board micro-soldering, liquid damage recovery, and keyboard repair. 90-day warranty on all services.">
+  <title>MacBook Repair & Care Services — iFixServices</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body class="shop-page">
+
+  <!-- ═══════ ANNOUNCEMENT BAR ═══════ -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__track">
+      <span class="announcement-bar__item">⚡ FREE DIAGNOSTIC ESTIMATE ON ALL MACBOOK REPAIRS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🛡️ UP TO 1-YEAR COMPREHENSIVE WARRANTY ON GENUINE PARTS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🚀 EXPRESS 1-HOUR SCREEN & BATTERY REPLACEMENTS AVAILABLE</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">⚡ FREE DIAGNOSTIC ESTIMATE ON ALL MACBOOK REPAIRS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🛡️ UP TO 1-YEAR COMPREHENSIVE WARRANTY ON GENUINE PARTS</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🚀 EXPRESS 1-HOUR SCREEN & BATTERY REPLACEMENTS AVAILABLE</span>
+    </div>
+  </div>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.jpeg" alt="iFixServices Logo">
+      </a>
+
+      <div class="navbar__menu">
+        <a href="index.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="all-services.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          All
+        </a>
+        <a href="macbook.html" class="navbar__link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+          MacBook
+        </a>
+        <a href="iphone.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          iPhone
+        </a>
+        <a href="camera.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          CCTV Camera
+        </a>
+        <a href="apple-watch.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+          Watch
+        </a>
+        <a href="admin.html" class="navbar__link editorial-nav__link--admin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Admin
+        </a>
+      </div>
+
+      <div class="navbar__actions">
+        <a href="#saved" class="navbar__icon-btn" id="wishlist-btn" aria-label="Saved Services">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="navbar__badge" id="wishlist-count">0</span>
+        </a>
+        <button class="navbar__icon-btn" id="header-search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="#cart" class="navbar__icon-btn" id="cart-btn" aria-label="Bookings & Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="navbar__badge" id="cart-count">0</span>
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <!-- Mobile Menu -->
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> Home</a>
+    <a href="all-services.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> All Services</a>
+    <a href="macbook.html" class="mobile-menu__link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"></rect></svg> MacBook Services</a>
+    <a href="iphone.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"></rect></svg> iPhone Services</a>
+    <a href="camera.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path></svg> CCTV Camera Services</a>
+    <a href="apple-watch.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"></circle></svg> Apple Watch Services</a>
+    <a href="about.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle></svg> About Us</a>
+    <a href="contact.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path></svg> Contact</a>
+    <a href="#" class="mobile-menu__cta" data-action="whatsapp-general"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> WhatsApp Support</a>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════════════
+       SHOP TOOLBAR & MAIN CATALOG LAYOUT
+       ═══════════════════════════════════════════════════ -->
+  <main class="shop-main">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="shop-breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="shop-breadcrumbs__sep">/</span>
+        <span aria-current="page">MacBook Services</span>
+      </nav>
+
+      <!-- Shop Toolbar -->
+      <div class="shop-toolbar">
+        <div class="shop-toolbar__left">
+          <h2 class="shop-toolbar__title">MacBook Services</h2>
+          <span class="shop-toolbar__count"><strong id="product-count">10</strong> Services found</span>
+        </div>
+
+        <div class="shop-toolbar__right">
+          <!-- Select Model Dropdown -->
+          <div class="shop-toolbar__model-select">
+            <span class="shop-toolbar__sort-label">MODEL</span>
+            <div class="custom-select-wrap">
+              <select id="model-filter-select" class="shop-toolbar__select" aria-label="Filter by MacBook model">
+                <option value="all" selected>ALL MACBOOK MODELS</option>
+                <option value="mb-pro-m3">MacBook Pro 14"/16" (M3 / Pro / Max)</option>
+                <option value="mb-pro-m2">MacBook Pro 14"/16" (M2 Pro / Max)</option>
+                <option value="mb-pro-m1">MacBook Pro 14"/16" (M1 Pro / Max)</option>
+                <option value="mb-pro-13-m2-m1">MacBook Pro 13" (M2 / M1)</option>
+                <option value="mb-air-15-m3-m2">MacBook Air 15" (M3 / M2)</option>
+                <option value="mb-air-13-m3-m2">MacBook Air 13" (M3 / M2)</option>
+                <option value="mb-air-13-m1">MacBook Air 13" (M1 2020)</option>
+                <option value="mb-pro-intel-16-15">MacBook Pro 16"/15" Intel</option>
+                <option value="mb-pro-intel-13">MacBook Pro 13" Intel Retina</option>
+                <option value="mb-air-intel-13">MacBook Air 13" Intel</option>
+              </select>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Sort Dropdown -->
+          <div class="shop-toolbar__sort">
+            <span class="shop-toolbar__sort-label">SORT BY</span>
+            <div class="custom-select-wrap">
+              <select id="sort-select" class="shop-toolbar__select" aria-label="Sort services">
+                <option value="featured" selected>FEATURED</option>
+                <option value="price-asc">PRICE: LOW TO HIGH</option>
+                <option value="price-desc">PRICE: HIGH TO LOW</option>
+                <option value="rating">HIGHEST RATED</option>
+                <option value="newest">POPULAR REPAIRS</option>
+              </select>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Layout Switcher (4-col / 2-col) -->
+          <div class="shop-toolbar__layout-btns">
+            <button class="shop-toolbar__layout-btn active" data-grid="4" title="4 Columns Grid" aria-label="4 Columns Grid">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="3.5" height="18" rx="0.5"/><rect x="8.5" y="3" width="3.5" height="18" rx="0.5"/><rect x="14" y="3" width="3.5" height="18" rx="0.5"/><rect x="19.5" y="3" width="3.5" height="18" rx="0.5"/></svg>
+            </button>
+            <button class="shop-toolbar__layout-btn" data-grid="2" title="Compact Grid" aria-label="2 Columns Grid">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="3" width="7" height="18" rx="0.5"/><rect x="13" y="3" width="7" height="18" rx="0.5"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Filter Trigger -->
+          <button class="shop-mobile-filter-btn" id="open-filter-drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
+            <span>Filter</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════
+           3. TWO-COLUMN REPAIR CATALOG LAYOUT
+           ═══════════════════════════════════════════════════ -->
+      <div class="shop-layout">
+
+        <!-- ─── SIDEBAR FILTERS (Durotan Style) ─── -->
+        <aside class="shop-sidebar" id="shop-sidebar">
+          <div class="shop-sidebar__inner">
+            
+            <div class="shop-sidebar__mobile-header">
+              <h3>Filters</h3>
+              <button class="shop-sidebar__close-btn" id="close-filter-drawer" aria-label="Close Filters">&times;</button>
+            </div>
+
+            <!-- Categories Quick Navigation -->
+            <div class="filter-group filter-group--categories">
+              <ul class="category-nav-list">
+                <li class="category-nav-item active" data-category="all"><a href="#all">ALL SERVICES</a></li>
+                <li class="category-nav-item" data-category="screen"><a href="#screen">SCREEN REPAIR</a></li>
+                <li class="category-nav-item" data-category="battery"><a href="#battery">BATTERY REPLACEMENT</a></li>
+                <li class="category-nav-item" data-category="logic-board"><a href="#logicboard">LOGIC BOARD</a></li>
+                <li class="category-nav-item" data-category="keyboard"><a href="#keyboard">KEYBOARD & TRACKPAD</a></li>
+                <li class="category-nav-item" data-category="storage"><a href="#storage">RAM & SSD UPGRADES</a></li>
+                <li class="category-nav-item" data-category="charging"><a href="#charging">MAGSAFE & USB-C</a></li>
+                <li class="category-nav-item highlight" data-category="liquid"><a href="#liquid">WATER DAMAGE</a></li>
+                <li class="category-nav-item" data-category="data"><a href="#data">DATA RECOVERY</a></li>
+                <li class="category-nav-item" data-category="diagnostic"><a href="#diagnostic">DIAGNOSTIC CHECK</a></li>
+              </ul>
+            </div>
+
+            <div class="shop-sidebar__divider"></div>
+            <h4 class="shop-sidebar__main-title">Filter By</h4>
+
+            <!-- 1. MODEL COMPATIBILITY -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>MACBOOK MODEL</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="m3">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">MacBook Pro M3 (14"/16")</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="m2">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">MacBook Pro M2 / M1</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="air">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">MacBook Air (13" & 15")</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="intel">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">MacBook Pro Intel Series</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. TURNAROUND TIME -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>TURNAROUND TIME</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <div class="size-chip-grid" style="grid-template-columns: repeat(2, 1fr);">
+                  <button type="button" class="size-chip" data-size="1hr">1–2 Hours</button>
+                  <button type="button" class="size-chip" data-size="same-day">Same Day</button>
+                  <button type="button" class="size-chip" data-size="24hr">24 Hours</button>
+                  <button type="button" class="size-chip" data-size="2days">2–3 Days</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. WARRANTY COVERAGE -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>WARRANTY</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="color" value="90days">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">90-Day Guarantee</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="color" value="180days">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">180-Day Guarantee</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="color" value="1year">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">1-Year Warranty</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 4. ESTIMATED PRICE RANGE -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>PRICE (₹)</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <div class="price-slider-wrap">
+                  <div class="price-slider-range">
+                    <input type="range" id="filter-price-slider" min="499" max="15000" value="15000" step="500">
+                  </div>
+                  <div class="price-slider-label">
+                    <span>From: </span>
+                    <strong id="price-slider-value">₹499 — ₹15,000</strong>
+                  </div>
+                  <button type="button" class="price-filter-apply-btn" id="apply-price-filter">VIEW SERVICES (10)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- RESET ALL FILTERS -->
+            <div class="shop-sidebar__reset-wrap">
+              <button type="button" class="shop-sidebar__reset-btn" id="clear-all-filters">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                RESET FILTERS
+              </button>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- ─── 4. MAIN PRODUCT / SERVICE GRID (4 Columns Durotan Style) ─── -->
+        <div class="shop-content">
+
+          <!-- Active Model Indicator -->
+          <div class="model-banner-indicator" id="model-banner-indicator">
+            <div class="model-banner-indicator__text">
+              <span>💻</span>
+              <span>Selected Model: <strong id="model-banner-name">All MacBook Models</strong></span>
+            </div>
+            <button type="button" class="model-banner-indicator__reset" id="model-banner-reset">Reset to All Models</button>
+          </div>
+
+          <div class="editorial-product-grid" id="product-grid">
+
+            <!-- Service 1: Screen Replacement -->
+            <article class="editorial-card" data-category="screen" data-material="m3 m2 air intel" data-color="1year 180days" data-price="4999" data-rating="4.9" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">MOST POPULAR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-1" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Retina Screen Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-1" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-1" data-name="MacBook Screen Replacement" data-price="4,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">GENUINE RETINA OEM</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-1">Retina Display & Screen Replacement</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹4,999</span>
+                  <span class="editorial-card__price-original">₹6,999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">1-Year Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 2: Battery Replacement -->
+            <article class="editorial-card" data-category="battery" data-material="m3 m2 air intel" data-color="180days 90days" data-price="2999" data-rating="4.8" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">SAME DAY REPAIR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-2" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Battery Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-2" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-2" data-name="MacBook Battery Replacement" data-price="2,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">GRADE-A CELLS</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-2">High-Capacity Battery Replacement</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,999</span>
+                  <span class="editorial-card__price-original">₹3,999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1 Hour</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 3: Keyboard & Trackpad Repair -->
+            <article class="editorial-card" data-category="keyboard" data-material="m3 m2 air intel" data-color="90days" data-price="1999" data-rating="4.7" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-3">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-3" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Keyboard Repair" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-3" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-3" data-name="Keyboard Replacement" data-price="1,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">PRECISION FIT</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-3">Top-Case Keyboard & Trackpad Repair</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,999</span>
+                  <span class="editorial-card__price-original">₹2,800</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">2–4 Hours</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 4: Logic Board Micro-Soldering -->
+            <article class="editorial-card" data-category="logic-board" data-material="m3 m2 air intel" data-color="180days" data-price="5999" data-rating="4.9" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">CHIP-LEVEL EXPERT</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-4" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Logic Board Micro-Soldering" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-4" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-4" data-name="Logic Board Repair" data-price="5,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">NO-POWER / IC RESTORATION</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-4">Logic Board Component-Level Repair</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹5,999</span>
+                  <span class="editorial-card__price-original">₹8,500</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Days</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 5: Liquid Damage Restoration -->
+            <article class="editorial-card" data-category="liquid" data-material="m3 m2 air intel" data-color="90days" data-price="2999" data-rating="4.8" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--sale">ULTRASONIC CLEANING</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-5">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-5" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="Liquid Damage Treatment" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-5" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-5" data-name="Water Damage Treatment" data-price="2,999" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">EMERGENCY RESCUE</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-5">Liquid & Water Damage Treatment</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Days</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 6: MagSafe / USB-C Charging Port -->
+            <article class="editorial-card" data-category="charging" data-material="m3 m2 air intel" data-color="90days" data-price="1499" data-rating="4.7" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-6" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="Charging Port Repair" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-6" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-6" data-name="Charging Port Repair" data-price="1,499" data-img="images/placeholder-macbook.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">MAGSAFE & THUNDERBOLT</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-6">MagSafe & USB-C Charging Port Repair</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,499</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 7: SSD & RAM Upgrades -->
+            <article class="editorial-card" data-category="storage" data-material="intel air" data-color="1year" data-price="2499" data-rating="4.8" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-7">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-7" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="SSD & RAM Upgrade" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-7" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-7" data-name="SSD / RAM Upgrade" data-price="2,499" data-img="images/placeholder-macbook.png" title="Book Upgrade" aria-label="Book Upgrade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">HIGH SPEED NVME</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-7">SSD Storage & RAM Performance Upgrade</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,499</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">2–4 Hours</span>
+                  <span class="size-pill active">1-Year Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 8: Data Recovery -->
+            <article class="editorial-card" data-category="data" data-material="m3 m2 air intel" data-color="90days" data-price="3499" data-rating="4.9" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">DATA PRESERVATION</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-8">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-8" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="MacBook Data Recovery" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-8" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-8" data-name="MacBook Data Recovery" data-price="3,499" data-img="images/placeholder-macbook.png" title="Book Recovery" aria-label="Book Recovery">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">ENCRYPTED SSD EXTRACTION</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-8">Secure Hardware Data Recovery</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹3,499</span>
+                  <span class="editorial-card__price-original">₹5,000</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–3 Days</span>
+                  <span class="size-pill active">Confidential</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 9: Software & macOS Troubleshooting -->
+            <article class="editorial-card" data-category="diagnostic" data-material="m3 m2 air intel" data-color="90days" data-price="999" data-rating="4.7" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-9">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-9" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="macOS Software Troubleshooting" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-9" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-9" data-name="macOS Troubleshooting" data-price="999" data-img="images/placeholder-macbook.png" title="Book Service" aria-label="Book Service">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">MACOS OPTIMIZATION</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-9">macOS Software & Boot Repair</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹999</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Hours</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 10: Complete Diagnostic Check -->
+            <article class="editorial-card" data-category="diagnostic" data-material="m3 m2 air intel" data-color="90days" data-price="499" data-rating="5.0" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">FREE ON REPAIR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="mb-10">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-10" class="editorial-card__link">
+                  <img src="images/placeholder-macbook.png" alt="Complete Diagnostic Check" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="mb-10" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="mb-10" data-name="Complete Diagnostic Check" data-price="499" data-img="images/placeholder-macbook.png" title="Book Check" aria-label="Book Check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">FULL HARDWARE AUDIT</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-10">Complete Hardware Diagnostic Assessment</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹499</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">45 Mins</span>
+                  <span class="size-pill active">Detailed Report</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /.editorial-product-grid -->
+
+          <!-- ─── 6. PAGINATION ─── -->
+          <nav class="editorial-pagination" aria-label="Catalog pagination">
+            <button class="editorial-pagination__btn" aria-label="Previous page" disabled>&lsaquo;</button>
+            <button class="editorial-pagination__page active">1</button>
+            <button class="editorial-pagination__page">2</button>
+            <button class="editorial-pagination__page">3</button>
+            <button class="editorial-pagination__btn" aria-label="Next page">&rsaquo;</button>
+          </nav>
+
+        </div><!-- /.shop-content -->
+      </div><!-- /.shop-layout -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       7. RECENTLY VIEWED SERVICES (Horizontal 5-Grid)
+       ═══════════════════════════════════════════════════ -->
+  <section class="recently-viewed-section">
+    <div class="container">
+      <div class="recently-viewed-section__header">
+        <h2 class="recently-viewed-section__title">Recently Viewed Services</h2>
+      </div>
+
+      <div class="recently-viewed-grid">
+        <!-- 1 -->
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="Retina Display Replacement" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">Retina Screen Replacement</h4>
+          <span class="mini-product-card__price">₹4,999</span>
+        </div>
+
+        <!-- 2 -->
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="Battery Replacement" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">High-Capacity Battery Replacement</h4>
+          <span class="mini-product-card__price">₹2,999</span>
+        </div>
+
+        <!-- 3 -->
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="Logic Board Repair" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">Logic Board Micro-Soldering</h4>
+          <div class="mini-product-card__price-row">
+            <span class="mini-product-card__price mini-product-card__price--sale">₹5,999</span>
+            <span class="mini-product-card__price-old">₹8,500</span>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="Keyboard Repair" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">Keyboard & Trackpad Repair</h4>
+          <span class="mini-product-card__price">₹1,999</span>
+        </div>
+
+        <!-- 5 -->
+        <div class="mini-product-card">
+          <div class="mini-product-card__img-wrap">
+            <img src="images/placeholder-macbook.png" alt="Data Recovery" loading="lazy">
+          </div>
+          <h4 class="mini-product-card__title">Secure Hardware Data Recovery</h4>
+          <span class="mini-product-card__price">₹3,499</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       8. FREQUENTLY PAIRED UPGRADES ("You May Also Like")
+       ═══════════════════════════════════════════════════ -->
+  <section class="recommendations-section">
+    <div class="container">
+      <div class="recommendations-section__header">
+        <span class="recommendations-section__eyebrow">Enhance & Protect</span>
+        <h2 class="recommendations-section__title">Frequently Paired Upgrades</h2>
+      </div>
+
+      <div class="editorial-product-grid editorial-product-grid--recommendations">
+        <!-- Rec 1 -->
+        <article class="editorial-card">
+          <div class="editorial-card__image-container">
+            <span class="editorial-card__badge">RECOMMENDED</span>
+            <a href="#rec-1" class="editorial-card__link">
+              <img src="images/tech-macbook-prod.png" alt="Thermal Paste & Fan Cleaning" loading="lazy">
+            </a>
+          </div>
+          <div class="editorial-card__body">
+            <h3 class="editorial-card__title"><a href="#rec-1">Deep Thermal Paste & Fan Clean</a></h3>
+            <span class="editorial-card__price-current">₹1,299</span>
+          </div>
+        </article>
+
+        <!-- Rec 2 -->
+        <article class="editorial-card">
+          <div class="editorial-card__image-container">
+            <span class="editorial-card__badge editorial-card__badge--neutral">SPEED BOOST</span>
+            <a href="#rec-2" class="editorial-card__link">
+              <img src="images/showcase-macbook.png" alt="NVMe SSD Storage Expansion" loading="lazy">
+            </a>
+          </div>
+          <div class="editorial-card__body">
+            <h3 class="editorial-card__title"><a href="#rec-2">NVMe High-Speed SSD Expansion</a></h3>
+            <span class="editorial-card__price-current">₹2,499</span>
+          </div>
+        </article>
+
+        <!-- Rec 3 -->
+        <article class="editorial-card">
+          <div class="editorial-card__image-container">
+            <a href="#rec-3" class="editorial-card__link">
+              <img src="images/tech-macbook.png" alt="MagSafe OEM Power Adapter" loading="lazy">
+            </a>
+          </div>
+          <div class="editorial-card__body">
+            <h3 class="editorial-card__title"><a href="#rec-3">Genuine MagSafe Power Adapter</a></h3>
+            <span class="editorial-card__price-current">₹2,199</span>
+          </div>
+        </article>
+
+        <!-- Rec 4 -->
+        <article class="editorial-card">
+          <div class="editorial-card__image-container">
+            <a href="#rec-4" class="editorial-card__link">
+              <img src="images/tech-macbook-prod.png" alt="Screen Tempered Glass Shield" loading="lazy">
+            </a>
+          </div>
+          <div class="editorial-card__body">
+            <h3 class="editorial-card__title"><a href="#rec-4">Anti-Glare Privacy Glass Shield</a></h3>
+            <span class="editorial-card__price-current">₹999</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       9. MULTI-COLUMN EDITORIAL FOOTER
+       ═══════════════════════════════════════════════════ -->
+  <footer class="editorial-footer">
+    <div class="container">
+      <div class="editorial-footer__grid">
+        <!-- Col 1: Brand -->
+        <div class="editorial-footer__col editorial-footer__col--brand">
+          <h3 class="editorial-footer__brand-title">iFixServices</h3>
+          <p class="editorial-footer__address">
+            Shop #4, Tech Hub Plaza, Main Road,<br>
+            Hyderabad, Telangana 500081<br><br>
+            +91 78912 39456<br>
+            support@ifixservices.in
+          </p>
+          <div class="editorial-footer__socials">
+            <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="editorial-footer__col">
+          <h4 class="editorial-footer__heading">REPAIR SERVICES</h4>
+          <ul class="editorial-footer__links">
+            <li><a href="macbook.html">MacBook Pro & Air Repairs</a></li>
+            <li><a href="iphone.html">iPhone Screen & Battery</a></li>
+            <li><a href="camera.html">CCTV Installation & Systems</a></li>
+            <li><a href="android.html">Android Device Care</a></li>
+            <li><a href="apple-watch.html">Apple Watch OLED Repair</a></li>
+            <li><a href="#">Doorstep Pickup Service</a></li>
+            <li><a href="#">Corporate IT Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div class="editorial-footer__col">
+          <h4 class="editorial-footer__heading">COMPANY</h4>
+          <ul class="editorial-footer__links">
+            <li><a href="about.html">About iFixServices</a></li>
+            <li><a href="contact.html">Contact & Service Center</a></li>
+            <li><a href="#">Warranty Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="editorial-footer__col editorial-footer__col--newsletter">
+          <h4 class="editorial-footer__heading">EXPERT SUPPORT</h4>
+          <p class="editorial-footer__newsletter-desc">Subscribe to receive exclusive repair coupons, diagnostics guides, and tech tips!</p>
+          <form class="editorial-footer__form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+            <p class="editorial-footer__terms-note">By subscribing, you accept the <a href="#">Privacy Policy</a></p>
+            <button type="submit" class="editorial-footer__submit-btn">GET UPDATES</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="editorial-footer__bottom">
+        <div class="editorial-footer__copy">
+          © 2026 iFixServices. ALL RIGHTS RESERVED. CERTIFIED APPLE & MULTI-BRAND EXPERTS.
+        </div>
+        <div class="editorial-footer__payments">
+          <span>SECURE PAYMENTS</span>
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%2300579f'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>UPI</text></svg>" alt="UPI">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%2300579f'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>VISA</text></svg>" alt="Visa">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23eb001b'/><circle cx='14' cy='12' r='7' fill='%23ff5f00'/><circle cx='24' cy='12' r='7' fill='%23f79e1b'/></svg>" alt="Mastercard">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23000000'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='8' font-weight='bold' text-anchor='middle'>Pay</text></svg>" alt="Apple Pay">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23ffffff' stroke='%23ddd'/><text x='50%25' y='65%25' fill='%234285F4' font-family='sans-serif' font-size='8' font-weight='bold' text-anchor='middle'>GPay</text></svg>" alt="Google Pay">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════ QUICK VIEW MODAL ═══════ -->
+  <div class="quickview-modal-overlay" id="quickview-overlay"></div>
+  <div class="quickview-modal" id="quickview-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="quickview-modal__close" id="quickview-close" aria-label="Close modal">&times;</button>
+    <div class="quickview-modal__content" id="quickview-content"></div>
+  </div>
+
+  <!-- ═══════ ADD TO CART / BOOKING TOAST ═══════ -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <div class="toast-notification__icon">✓</div>
+    <div class="toast-notification__text">
+      <strong id="toast-title">Service Booked</strong>
+      <span id="toast-desc">Added to your repair estimate list.</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Certified Android repair services for Samsung Galaxy, Google Pixel, OnePlus, Xiaomi, and Vivo. AMOLED screen replacement, battery swap, charging port fix, and motherboard repair by iFixServices.">
+  <title>Android Phone Repair Services — iFixServices</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body class="shop-page">
+
+  <!-- ═══════ ANNOUNCEMENT BAR ═══════ -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__track">
+      <span class="announcement-bar__item">⚡ SAMSUNG GALAXY & ONEPLUS 45-MIN EXPRESS REPAIR SERVICE</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🛡️ 100% ORIGINAL 120HZ DYNAMIC AMOLED SCREENS WITH WARRANTY</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🚗 FREE DOORSTEP PICKUP & DELIVERY ACROSS HYDERABAD</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">⚡ SAMSUNG GALAXY & ONEPLUS 45-MIN EXPRESS REPAIR SERVICE</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🛡️ 100% ORIGINAL 120HZ DYNAMIC AMOLED SCREENS WITH WARRANTY</span>
+      <span class="announcement-bar__divider"></span>
+      <span class="announcement-bar__item">🚗 FREE DOORSTEP PICKUP & DELIVERY ACROSS HYDERABAD</span>
+    </div>
+  </div>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logo.jpeg" alt="iFixServices Logo">
+      </a>
+
+      <div class="navbar__menu">
+        <a href="index.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="macbook.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+          MacBook
+        </a>
+        <a href="iphone.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          iPhone
+        </a>
+        <a href="camera.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+          CCTV Camera
+        </a>
+        <a href="android.html" class="navbar__link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          Android
+        </a>
+        <a href="apple-watch.html" class="navbar__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+          Watch
+        </a>
+      </div>
+
+      <div class="navbar__actions">
+        <a href="#saved" class="navbar__icon-btn" id="wishlist-btn" aria-label="Saved Services">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="navbar__badge" id="wishlist-count">0</span>
+        </a>
+        <button class="navbar__icon-btn" id="header-search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="#cart" class="navbar__icon-btn" id="cart-btn" aria-label="Cart & Bookings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="navbar__badge" id="cart-count">0</span>
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg> Home</a>
+    <a href="macbook.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"></rect></svg> MacBook Services</a>
+    <a href="iphone.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"></rect></svg> iPhone Services</a>
+    <a href="camera.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path></svg> CCTV Camera Services</a>
+    <a href="android.html" class="mobile-menu__link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"></rect></svg> Android Services</a>
+    <a href="apple-watch.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"></circle></svg> Apple Watch Services</a>
+    <a href="about.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle></svg> About Us</a>
+    <a href="contact.html" class="mobile-menu__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path></svg> Contact</a>
+    <a href="#" class="mobile-menu__cta" data-action="whatsapp-general"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> WhatsApp Support</a>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════════════
+       1. CLEAN EDITORIAL HEADER (Android Care)
+       ═══════════════════════════════════════════════════ -->
+  <header class="editorial-hero editorial-hero--white">
+    <div class="container editorial-hero__container">
+      <nav class="editorial-hero__breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="editorial-hero__sep">/</span>
+        <span aria-current="page">Android Services</span>
+      </nav>
+      <h1 class="editorial-hero__title">Android Repairs & Care</h1>
+      <p class="editorial-hero__subtitle">Specialized multi-brand repairs for Samsung Galaxy, Google Pixel, OnePlus, Xiaomi & Vivo with genuine parts and up to 1-year guarantee.</p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════
+       2. SHOP TOOLBAR & MAIN CATALOG LAYOUT
+       ═══════════════════════════════════════════════════ -->
+  <main class="shop-main">
+    <div class="container">
+
+      <div class="shop-toolbar">
+        <div class="shop-toolbar__left">
+          <h2 class="shop-toolbar__title">Android Services</h2>
+          <span class="shop-toolbar__count"><strong id="product-count">10</strong> Services found</span>
+        </div>
+
+        <div class="shop-toolbar__right">
+          <div class="shop-toolbar__sort">
+            <span class="shop-toolbar__sort-label">SORT BY</span>
+            <div class="custom-select-wrap">
+              <select id="sort-select" class="shop-toolbar__select" aria-label="Sort Android repairs">
+                <option value="featured" selected>FEATURED</option>
+                <option value="price-asc">PRICE: LOW TO HIGH</option>
+                <option value="price-desc">PRICE: HIGH TO LOW</option>
+                <option value="rating">HIGHEST RATED</option>
+                <option value="newest">FASTEST TURNAROUND</option>
+              </select>
+              <svg class="custom-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+
+          <div class="shop-toolbar__layout-btns">
+            <button class="shop-toolbar__layout-btn active" data-grid="4" title="4 Columns Grid" aria-label="4 Columns Grid">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="3.5" height="18" rx="0.5"/><rect x="8.5" y="3" width="3.5" height="18" rx="0.5"/><rect x="14" y="3" width="3.5" height="18" rx="0.5"/><rect x="19.5" y="3" width="3.5" height="18" rx="0.5"/></svg>
+            </button>
+            <button class="shop-toolbar__layout-btn" data-grid="2" title="Compact Grid" aria-label="2 Columns Grid">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="3" width="7" height="18" rx="0.5"/><rect x="13" y="3" width="7" height="18" rx="0.5"/></svg>
+            </button>
+          </div>
+
+          <button class="shop-mobile-filter-btn" id="open-filter-drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg>
+            <span>Filter</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════
+           3. TWO-COLUMN ANDROID CATALOG LAYOUT
+           ═══════════════════════════════════════════════════ -->
+      <div class="shop-layout">
+
+        <!-- ─── SIDEBAR FILTERS ─── -->
+        <aside class="shop-sidebar" id="shop-sidebar">
+          <div class="shop-sidebar__inner">
+            
+            <div class="shop-sidebar__mobile-header">
+              <h3>Filters</h3>
+              <button class="shop-sidebar__close-btn" id="close-filter-drawer" aria-label="Close Filters">&times;</button>
+            </div>
+
+            <!-- Categories Quick Navigation -->
+            <div class="filter-group filter-group--categories">
+              <ul class="category-nav-list">
+                <li class="category-nav-item active" data-category="all"><a href="#all">ALL REPAIRS</a></li>
+                <li class="category-nav-item" data-category="screen"><a href="#screen">AMOLED SCREEN REPAIR</a></li>
+                <li class="category-nav-item" data-category="battery"><a href="#battery">BATTERY REPLACEMENT</a></li>
+                <li class="category-nav-item" data-category="back-glass"><a href="#backglass">BACK PANEL / GLASS</a></li>
+                <li class="category-nav-item" data-category="charging"><a href="#charging">TYPE-C CHARGING</a></li>
+                <li class="category-nav-item" data-category="motherboard"><a href="#motherboard">MOTHERBOARD / CPU</a></li>
+                <li class="category-nav-item highlight" data-category="liquid"><a href="#liquid">WATER DAMAGE</a></li>
+                <li class="category-nav-item" data-category="camera"><a href="#camera">CAMERA & SENSOR</a></li>
+                <li class="category-nav-item" data-category="diagnostic"><a href="#diagnostic">DIAGNOSTIC CHECK</a></li>
+              </ul>
+            </div>
+
+            <div class="shop-sidebar__divider"></div>
+            <h4 class="shop-sidebar__main-title">Filter By</h4>
+
+            <!-- 1. BRAND -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>BRAND</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="samsung">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">Samsung Galaxy (S/Z/A)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="oneplus">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">OnePlus (12/11/Nord)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="pixel">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">Google Pixel (8/7/6)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="material" value="xiaomi">
+                  <span class="custom-checkbox__box"></span>
+                  <span class="custom-checkbox__text">Xiaomi / Redmi / POCO</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. SPEED -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>SPEED</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <div class="size-chip-grid" style="grid-template-columns: repeat(2, 1fr);">
+                  <button type="button" class="size-chip" data-size="45m">45 Mins</button>
+                  <button type="button" class="size-chip" data-size="1hr">1–2 Hours</button>
+                  <button type="button" class="size-chip" data-size="same-day">Same Day</button>
+                  <button type="button" class="size-chip" data-size="24hr">24 Hours</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. ESTIMATED PRICE RANGE -->
+            <div class="filter-accordion open">
+              <button class="filter-accordion__header">
+                <span>PRICE (₹)</span>
+                <span class="filter-accordion__icon">−</span>
+              </button>
+              <div class="filter-accordion__body">
+                <div class="price-slider-wrap">
+                  <div class="price-slider-range">
+                    <input type="range" id="filter-price-slider" min="499" max="9000" value="9000" step="500">
+                  </div>
+                  <div class="price-slider-label">
+                    <span>From: </span>
+                    <strong id="price-slider-value">₹499 — ₹9,000</strong>
+                  </div>
+                  <button type="button" class="price-filter-apply-btn" id="apply-price-filter">VIEW SERVICES (10)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- RESET ALL -->
+            <div class="shop-sidebar__reset-wrap">
+              <button type="button" class="shop-sidebar__reset-btn" id="clear-all-filters">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                RESET FILTERS
+              </button>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- ─── 4. MAIN ANDROID REPAIR GRID (4 Columns) ─── -->
+        <div class="shop-content">
+          <div class="editorial-product-grid" id="product-grid">
+
+            <!-- Service 1: AMOLED Screen Replacement -->
+            <article class="editorial-card" data-category="screen" data-material="samsung oneplus pixel xiaomi" data-price="2499" data-rating="4.9" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">MOST POPULAR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-1" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Dynamic AMOLED Screen Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-1" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-1" data-name="AMOLED Screen Replacement" data-price="2,499" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">120HZ DYNAMIC AMOLED</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-1">AMOLED & Curved Screen Replacement</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,499</span>
+                  <span class="editorial-card__price-original">₹3,800</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">45 Mins</span>
+                  <span class="size-pill active">1-Year Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 2: Battery Replacement -->
+            <article class="editorial-card" data-category="battery" data-material="samsung oneplus pixel xiaomi" data-price="1299" data-rating="4.8" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">HIGH DENSITY LI-PO</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-2" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Android Battery Replacement" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-2" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-2" data-name="Android Battery Replacement" data-price="1,299" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">GENUINE 5000MAH+</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-2">High-Capacity Battery Replacement</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,299</span>
+                  <span class="editorial-card__price-original">₹1,899</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">30 Mins</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 3: Type-C Fast Charging Port -->
+            <article class="editorial-card" data-category="charging" data-material="samsung oneplus pixel xiaomi" data-price="899" data-rating="4.8" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-3">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-3" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="USB Type-C Charging Port" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-3" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-3" data-name="USB-C Charging Port Repair" data-price="899" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">SUPER FAST CHARGING 65W/100W</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-3">USB Type-C Sub-Board & Port Repair</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹899</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">30 Mins</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 4: Motherboard Micro-Soldering -->
+            <article class="editorial-card" data-category="motherboard" data-material="samsung oneplus pixel" data-price="2999" data-rating="4.9" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">CHIP-LEVEL IC</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-4" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Motherboard CPU Reballing" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-4" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-4" data-name="CPU Reballing & Motherboard" data-price="2,999" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">DEAD / AUTO-RESTART RECOVERY</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-4">Motherboard CPU Reballing & Power IC Fix</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹2,999</span>
+                  <span class="editorial-card__price-original">₹4,500</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Days</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 5: Camera & OIS Repair -->
+            <article class="editorial-card" data-category="camera" data-material="samsung oneplus pixel" data-price="1699" data-rating="4.8" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge">200MP PRO SENSOR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-5">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-5" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Android Camera Module" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-5" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-5" data-name="Android Camera Repair" data-price="1,699" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">OIS & PERISCOPE LENS</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-5">Multi-Lens Camera Module & Glass Replacement</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,699</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1 Hour</span>
+                  <span class="size-pill active">180-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 6: Back Glass / Panel -->
+            <article class="editorial-card" data-category="back-glass" data-material="samsung oneplus pixel xiaomi" data-price="1199" data-rating="4.8" data-collection="best-sellers">
+              <div class="editorial-card__image-container">
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-6" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Back Glass Panel" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-6" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-6" data-name="Back Panel Replacement" data-price="1,199" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">GORILLA GLASS VICTUS</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-6">Rear Glass & Back Panel Replacement</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,199</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">45 Mins</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 7: Water Damage Treatment -->
+            <article class="editorial-card" data-category="liquid" data-material="samsung oneplus pixel xiaomi" data-price="1499" data-rating="4.8" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--sale">ULTRASONIC FIX</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-7">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-7" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Android Water Damage" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-7" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-7" data-name="Water Damage Treatment" data-price="1,499" data-img="images/hero-android.png" title="Book Repair" aria-label="Book Repair">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">DECONTAMINATION</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-7">Water & Liquid Ingress Emergency Rescue</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹1,499</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">1–2 Days</span>
+                  <span class="size-pill active">90-Day Warranty</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 8: Complete Diagnostic Audit -->
+            <article class="editorial-card" data-category="diagnostic" data-material="samsung oneplus pixel xiaomi" data-price="349" data-rating="5.0" data-collection="new-arrivals">
+              <div class="editorial-card__image-container">
+                <span class="editorial-card__badge editorial-card__badge--neutral">FREE ON REPAIR</span>
+                <button class="editorial-card__wishlist" aria-label="Save Service" data-product-id="and-8">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                
+                <a href="#service-8" class="editorial-card__link">
+                  <img src="images/hero-android.png" alt="Android Diagnostic Check" class="editorial-card__img" loading="lazy">
+                </a>
+
+                <div class="editorial-card__actions">
+                  <button class="editorial-card__action-btn quick-view-btn" data-id="and-8" title="Quick View" aria-label="Quick View">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <button class="editorial-card__action-btn add-to-cart-btn" data-id="and-8" data-name="Android Diagnostic Check" data-price="349" data-img="images/hero-android.png" title="Book Check" aria-label="Book Check">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  </button>
+                  <button class="editorial-card__action-btn compare-btn" title="Compare" aria-label="Compare">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="editorial-card__body">
+                <span class="editorial-card__meta-tag">HARDWARE AUDIT</span>
+                <h3 class="editorial-card__title">
+                  <a href="#service-8">Comprehensive 48-Point Android Diagnostic Check</a>
+                </h3>
+                <div class="editorial-card__price-row">
+                  <span class="editorial-card__price-current">₹349</span>
+                </div>
+                <div class="editorial-card__size-pills">
+                  <span class="size-pill">20 Mins</span>
+                  <span class="size-pill active">Instant Report</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /.editorial-product-grid -->
+
+          <!-- ─── 6. PAGINATION ─── -->
+          <nav class="editorial-pagination" aria-label="Catalog pagination">
+            <button class="editorial-pagination__btn" aria-label="Previous page" disabled>&lsaquo;</button>
+            <button class="editorial-pagination__page active">1</button>
+            <button class="editorial-pagination__page">2</button>
+            <button class="editorial-pagination__btn" aria-label="Next page">&rsaquo;</button>
+          </nav>
+
+        </div><!-- /.shop-content -->
+      </div><!-- /.shop-layout -->
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       7. MULTI-COLUMN FOOTER
+       ═══════════════════════════════════════════════════ -->
+  <footer class="editorial-footer">
+    <div class="container">
+      <div class="editorial-footer__grid">
+        <div class="editorial-footer__col editorial-footer__col--brand">
+          <h3 class="editorial-footer__brand-title">iFixServices</h3>
+          <p class="editorial-footer__address">
+            Shop #4, Tech Hub Plaza, Main Road,<br>
+            Hyderabad, Telangana 500081<br><br>
+            +91 78912 39456<br>
+            support@ifixservices.in
+          </p>
+        </div>
+
+        <div class="editorial-footer__col">
+          <h4 class="editorial-footer__heading">REPAIR SERVICES</h4>
+          <ul class="editorial-footer__links">
+            <li><a href="macbook.html">MacBook Pro & Air Repairs</a></li>
+            <li><a href="iphone.html">iPhone Screen & Battery</a></li>
+            <li><a href="camera.html">CCTV Installation & Systems</a></li>
+            <li><a href="android.html">Android Device Care</a></li>
+            <li><a href="apple-watch.html">Apple Watch OLED Repair</a></li>
+          </ul>
+        </div>
+
+        <div class="editorial-footer__col">
+          <h4 class="editorial-footer__heading">COMPANY</h4>
+          <ul class="editorial-footer__links">
+            <li><a href="about.html">About iFixServices</a></li>
+            <li><a href="contact.html">Contact & Service Center</a></li>
+            <li><a href="#">Warranty Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="editorial-footer__col editorial-footer__col--newsletter">
+          <h4 class="editorial-footer__heading">EXPERT SUPPORT</h4>
+          <p class="editorial-footer__newsletter-desc">Subscribe to receive exclusive repair coupons, diagnostics guides, and tech tips!</p>
+          <form class="editorial-footer__form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+            <p class="editorial-footer__terms-note">By subscribing, you accept the <a href="#">Privacy Policy</a></p>
+            <button type="submit" class="editorial-footer__submit-btn">GET UPDATES</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="editorial-footer__bottom">
+        <div class="editorial-footer__copy">
+          © 2026 iFixServices. ALL RIGHTS RESERVED. CERTIFIED MULTI-BRAND ANDROID EXPERTS.
+        </div>
+        <div class="editorial-footer__payments">
+          <span>SECURE PAYMENTS</span>
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%2300579f'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>UPI</text></svg>" alt="UPI">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%2300579f'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='9' font-weight='bold' text-anchor='middle'>VISA</text></svg>" alt="Visa">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23eb001b'/><circle cx='14' cy='12' r='7' fill='%23ff5f00'/><circle cx='24' cy='12' r='7' fill='%23f79e1b'/></svg>" alt="Mastercard">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23000000'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='8' font-weight='bold' text-anchor='middle'>Pay</text></svg>" alt="Apple Pay">
+          <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 24' width='38' height='24'><rect width='38' height='24' rx='3' fill='%23ffffff' stroke='%23ddd'/><text x='50%25' y='65%25' fill='white' font-family='sans-serif' font-size='8' font-weight='bold' text-anchor='middle'>GPay</text></svg>" alt="Google Pay">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════ QUICK VIEW MODAL ═══════ -->
+  <div class="quickview-modal-overlay" id="quickview-overlay"></div>
+  <div class="quickview-modal" id="quickview-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="quickview-modal__close" id="quickview-close" aria-label="Close modal">&times;</button>
+    <div class="quickview-modal__content" id="quickview-content"></div>
+  </div>
+
+  <!-- ═══════ BOOKING TOAST ═══════ -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <div class="toast-notification__icon">✓</div>
+    <div class="toast-notification__text">
+      <strong id="toast-title">Service Booked</strong>
+      <span id="toast-desc">Added to your repair estimate list.</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
