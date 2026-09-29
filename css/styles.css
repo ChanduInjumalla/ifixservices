@@ -5725,3 +5725,324 @@ p {
   }
 }
 
+/* ============================================
+   MOBILE FIXES — SHOP TOOLBAR, FILTERS,
+   MODEL/SORT DROPDOWNS, CATEGORY NAV
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* ── Shop Breadcrumbs ── */
+  .shop-breadcrumbs {
+    font-size: 11px !important;
+    padding: 10px 0 6px !important;
+    gap: 4px;
+  }
+
+  .shop-breadcrumbs__sep {
+    margin: 0 4px;
+  }
+
+  /* ── Shop Toolbar — Stack vertically on mobile ── */
+  .shop-toolbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    padding: 12px 0 !important;
+    margin-bottom: 16px !important;
+    top: 80px;
+    position: sticky;
+  }
+
+  .shop-toolbar__left {
+    width: 100%;
+    flex-direction: column;
+    gap: 4px !important;
+  }
+
+  .shop-toolbar__title {
+    font-size: 18px !important;
+    font-weight: 700;
+  }
+
+  .shop-toolbar__count {
+    font-size: 12px !important;
+  }
+
+  .shop-toolbar__right {
+    width: 100%;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  /* ── Model Select Dropdown ── */
+  .shop-toolbar__model-select {
+    width: 100% !important;
+    padding: 8px 12px !important;
+    border-radius: 10px !important;
+    background: #f5f7fa;
+    order: 1;
+  }
+
+  .shop-toolbar__model-select .shop-toolbar__sort-label {
+    font-size: 9px !important;
+    letter-spacing: 0.8px;
+    min-width: 40px;
+  }
+
+  .shop-toolbar__model-select .custom-select-wrap {
+    flex: 1;
+  }
+
+  .shop-toolbar__model-select .shop-toolbar__select {
+    max-width: 100% !important;
+    width: 100% !important;
+    font-size: 12px !important;
+    padding-right: 18px;
+  }
+
+  /* ── Sort Dropdown ── */
+  .shop-toolbar__sort {
+    flex: 1;
+    min-width: 0;
+    order: 2;
+    background: #f5f7fa;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+  }
+
+  .shop-toolbar__sort .shop-toolbar__sort-label {
+    font-size: 9px !important;
+    min-width: 36px;
+  }
+
+  .shop-toolbar__sort .custom-select-wrap {
+    flex: 1;
+  }
+
+  .shop-toolbar__sort .shop-toolbar__select {
+    font-size: 11px !important;
+    width: 100%;
+  }
+
+  /* ── Layout Buttons ── */
+  .shop-toolbar__layout-btns {
+    order: 3;
+    gap: 4px !important;
+  }
+
+  .shop-toolbar__layout-btn {
+    padding: 6px !important;
+  }
+
+  .shop-toolbar__layout-btn svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* ── Mobile Filter Button ── */
+  .shop-mobile-filter-btn {
+    display: inline-flex !important;
+    order: 4;
+    font-size: 11px !important;
+    padding: 8px 12px !important;
+    border-radius: 10px !important;
+    gap: 6px;
+  }
+
+  .shop-mobile-filter-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ── Model Banner Indicator ── */
+  .model-banner-indicator {
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    font-size: 12px !important;
+    margin-bottom: 12px !important;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .model-banner-indicator__text {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .model-banner-indicator__reset {
+    font-size: 11px !important;
+    align-self: flex-start;
+  }
+
+  /* ── Shop Sidebar / Filter Drawer ── */
+  .shop-sidebar {
+    width: 85vw !important;
+    max-width: 320px !important;
+    padding: 20px 16px !important;
+    border-radius: 0 16px 16px 0;
+  }
+
+  .shop-sidebar__mobile-header {
+    padding-bottom: 14px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .shop-sidebar__mobile-header h3 {
+    font-size: 18px !important;
+    font-weight: 700;
+  }
+
+  .shop-sidebar__close-btn {
+    font-size: 24px !important;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f5f5f7;
+  }
+
+  .shop-sidebar__main-title {
+    font-size: 11px !important;
+    letter-spacing: 1px;
+  }
+
+  .shop-sidebar__divider {
+    margin: 12px 0 !important;
+  }
+
+  /* ── Category Navigation List ── */
+  .filter-group--categories {
+    margin-bottom: 12px !important;
+  }
+
+  .category-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px !important;
+  }
+
+  .category-nav-item {
+    margin: 0 !important;
+  }
+
+  .category-nav-item a {
+    font-size: 11px !important;
+    padding: 6px 12px !important;
+    border-radius: 8px;
+    display: block;
+    background: #f5f7fa;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+  }
+
+  .category-nav-item.active a {
+    background: #111 !important;
+    color: #fff !important;
+    border-color: #111 !important;
+  }
+
+  /* ── Filter Accordions inside sidebar ── */
+  .shop-sidebar .filter-accordion {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 4px !important;
+    background: transparent !important;
+  }
+
+  .shop-sidebar .filter-accordion__header {
+    font-size: 13px !important;
+    padding: 10px 0 !important;
+    font-weight: 600;
+  }
+
+  .shop-sidebar .filter-accordion__body {
+    padding: 4px 0 12px !important;
+  }
+
+  /* ── Checkbox filters ── */
+  .filter-checkbox-list {
+    gap: 6px !important;
+  }
+
+  .filter-checkbox-label {
+    font-size: 13px !important;
+    padding: 6px 0;
+    gap: 8px;
+  }
+
+  .filter-checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+  }
+
+  .filter-checkbox-count {
+    font-size: 11px !important;
+    color: #999;
+  }
+
+  /* ── Price Range Slider ── */
+  .price-filter-wrap {
+    padding: 4px 0 !important;
+  }
+
+  .price-filter-wrap input[type="range"] {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .price-filter-labels {
+    font-size: 12px !important;
+    margin-top: 8px;
+  }
+
+  .price-filter-apply-btn {
+    font-size: 12px !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* ── Reset Filters Button ── */
+  .shop-sidebar__reset-wrap {
+    padding-top: 12px !important;
+    margin-top: 12px !important;
+  }
+
+  .shop-sidebar__reset-btn {
+    font-size: 12px !important;
+    padding: 10px !important;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* ── Shop Layout (sidebar + content) ── */
+  .shop-layout {
+    display: block !important;
+    padding: 0 !important;
+  }
+
+  .shop-content {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* ── Active filters tags ── */
+  .active-filters {
+    flex-wrap: wrap;
+    gap: 6px !important;
+    padding: 8px 0 !important;
+  }
+
+  .active-filter-tag {
+    font-size: 10px !important;
+    padding: 4px 10px !important;
+    border-radius: 6px;
+  }
+}
+
